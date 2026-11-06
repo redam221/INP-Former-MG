@@ -1,0 +1,24 @@
+# Core deep-learning stack.
+# torch / torchvision should be installed to match your CUDA version — e.g.
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0
+torchvision>=0.15
+timm>=0.9.12
+
+# Scientific / image
+numpy
+scipy
+scikit-learn
+scikit-image
+opencv-python-headless
+matplotlib
+pandas
+kornia
+Pillow
+
+# Utilities
+tqdm
+
+# Optional: GPU-accelerated metric evaluation (AUPRO).  The code falls back to a
+# CPU implementation if this is unavailable, so it is not strictly required.
+# adeval==1.1.0
